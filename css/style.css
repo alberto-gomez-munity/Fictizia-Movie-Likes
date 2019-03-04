@@ -1,0 +1,7 @@
+#searchResults {
+  display: flex;
+}
+
+.movie-mini-card {
+  max-width: 10%;
+}
