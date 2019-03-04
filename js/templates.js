@@ -23,8 +23,8 @@ function printTmplMini(data) {
           <span class="badge badge-light">${data.Year}</span>
           <span class="badge badge-${classType}">${data.Type}</span>
         </p>
-        <button type="button" id="more-info-btn" class="btn btn-primary btn-sm" data-imdb="${data.imdbID}"><i class="fas fa-info-circle"></i> Más Info</button>
-        <button type="button" id="save-btn" class="btn btn-danger btn-sm" data-imdb="${data.imdbID}"><i class="fas fa-heart"></i> Guardar</button>
+        <button type="button" id="more-info-btn" class="btn btn-primary btn-block btn-sm mb-2" data-imdb="${data.imdbID}"><i class="fas fa-info-circle"></i> Más Info</button>
+        <button type="button" id="save-btn" class="btn btn-danger btn-block btn-sm" data-imdb="${data.imdbID}"><i class="fas fa-heart"></i> Guardar</button>
       </div>
     </div>
   `;
