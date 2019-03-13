@@ -26,17 +26,18 @@ function searchMovies(termSearch, page = 1, cb) {
   var url = encodeURI(`${END_POINT}&s=${termSearch}&=page=${page}`);
 
   ajaxRequest(url, (data) => {
-    console.log(data);
+    //console.log(data);
     cb(data);
   })
 }
 
 
-function getMovieData(imdb){
+function getMovieData(imdb, cb){
 
   var url = encodeURI(`${END_POINT}&i=${imdb}`);
 
   ajaxRequest(url, (data) => {
-    console.log(data);
+    //console.log(data);
+    cb(data);
   })
 }

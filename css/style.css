@@ -6,4 +6,18 @@
 .movie-mini-card {
   max-width: 18%;
   margin: 1%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.movie-mini-card .button-group {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 3%;
+  left: 0;
+}
+
+.movie-mini-card .card-body {
+  flex: none;
 }
