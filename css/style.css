@@ -21,3 +21,26 @@
 .movie-mini-card .card-body {
   flex: none;
 }
+
+#movies .card {
+  cursor: pointer;
+}
+
+.editable {
+  position: relative;
+  cursor:pointer;
+}
+
+.editable:hover:before {
+  content: 'click to edit';
+  position: absolute;
+  right: 0;
+  height: auto;
+  width: auto;
+  background: #e4e4e4;
+  color: #8e8e8e;
+  font-size: 9px;
+  padding: 3px 5px;
+  display: inline-block;
+  border-radius: 3px;
+}

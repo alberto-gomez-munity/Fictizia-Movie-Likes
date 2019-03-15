@@ -68,10 +68,15 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body" id="modalContent"></div>
+        <div class="modal-body">
+          <div id="modalAlerts"></div>
+          <div id="modalContent"></div>
+        </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" onclick="saveMovie(this)" class="btn btn-danger btn-save" id="btn-save-modal"><i class="fas fa-heart"></i> Guardar</button>
+          <button type="button" onclick="saveMovie(this)" class="btn btn-success btn-save" id="btn-save-modal"><i class="fas fa-heart"></i> Guardar</button>
+          <button type="button" onclick="deleteMovie(this)" class="btn btn-danger btn-delete d-none" id="btn-delete-modal"><i class="fas fa-trash-alt"></i> Borrar</button>
+          <button type="button" onclick="editMovie(this)" class="btn btn-warning btn-edit d-none" id="btn-edit-modal"><i class="fas fa-edit"></i> Editar</button>
         </div>
       </div>
     </div>
@@ -98,6 +103,7 @@
 
   <script src="./js/db.js"></script>
   <script src="./js/data-external.js"></script>
+  <script src="./js/functions.js"></script>
   <script src="./js/templates.js"></script>
   <script src="./js/index.js"></script>
 </body>
